@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Apr  7 12:40:37 2020
+# Process ID: 4459
+# Current directory: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105/quabo_master/SDK/base_mb_wrapper_hw_platform_2
+# Command line: vivado -mode tcl
+# Log file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105/quabo_master/SDK/base_mb_wrapper_hw_platform_2/vivado.log
+# Journal file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105/quabo_master/SDK/base_mb_wrapper_hw_platform_2/vivado.jou
+#-----------------------------------------------------------
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "download.bin" -force
+Command: write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit {up 0x0 base_mb_wrapper.bit} -checksum -file download.bin -force
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile base_mb_wrapper.bit
+Writing file ./download.bin
+Writing log file ./download.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX1
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0x9D804746
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                Checksum
+0x00000000    0x00661EDB    Apr  7 12:39:19 2020    base_mb_wrapper.bit    0x0539046A
+File Checksum Total                                                        0x0539046A
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X_3.bin" -force
+Command: write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit {up 0x0 base_mb_wrapper.bit} -checksum -file quabo_010X_3.bin -force
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile base_mb_wrapper.bit
+Writing file ./quabo_010X_3.bin
+Writing log file ./quabo_010X_3.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX1
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0x9D804746
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                Checksum
+0x00000000    0x00661EDB    Apr  7 12:39:19 2020    base_mb_wrapper.bit    0x0539046A
+File Checksum Total                                                        0x0539046A
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X_3.bin" -force
+Command: write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit {up 0x0 base_mb_wrapper.bit} -checksum -file quabo_010X_3.bin -force
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile base_mb_wrapper.bit
+Writing file ./quabo_010X_3.bin
+Writing log file ./quabo_010X_3.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX1
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0x9D848CE8
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                Checksum
+0x00000000    0x00661EDB    Apr  7 13:19:40 2020    base_mb_wrapper.bit    0x053D4A0C
+File Checksum Total                                                        0x053D4A0C
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X_3.bin" -force
+Command: write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit {up 0x0 base_mb_wrapper.bit} -checksum -file quabo_010X_3.bin -force
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile base_mb_wrapper.bit
+Writing file ./quabo_010X_3.bin
+Writing log file ./quabo_010X_3.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX1
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0x9D804746
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                Checksum
+0x00000000    0x00661EDB    Apr  7 14:25:01 2020    base_mb_wrapper.bit    0x0539046A
+File Checksum Total                                                        0x0539046A
+0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully

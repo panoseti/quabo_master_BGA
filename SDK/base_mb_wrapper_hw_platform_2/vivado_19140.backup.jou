@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Apr  4 12:00:21 2020
+# Process ID: 19140
+# Current directory: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105/quabo_master/SDK/base_mb_wrapper_hw_platform_2
+# Command line: vivado -mode tcl
+# Log file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105/quabo_master/SDK/base_mb_wrapper_hw_platform_2/vivado.log
+# Journal file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105/quabo_master/SDK/base_mb_wrapper_hw_platform_2/vivado.jou
+#-----------------------------------------------------------
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 download.bit" -checksum -file "download.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010_1X.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X_1.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X_1.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X_1.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X_2.bin" -force

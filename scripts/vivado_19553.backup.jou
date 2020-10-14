@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Thu Sep 17 12:11:27 2020
+# Process ID: 19553
+# Current directory: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0116/quabo_master/scripts
+# Command line: vivado -mode tcl
+# Log file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0116/quabo_master/scripts/vivado.log
+# Journal file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0116/quabo_master/scripts/vivado.jou
+#-----------------------------------------------------------
+source -notrace create_binfile.tcl 

@@ -1,0 +1,1 @@
+-wto "85a87940f6d444f6a45619118a7e7fa8" --incr --debug "typical" --relax --mt "8" -L "axis_infrastructure_v1_1_0" -L "axis_register_slice_v1_1_18" -L "axis_switch_v1_1_18" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "sim_switch_behav" "xil_defaultlib.sim_switch" "xil_defaultlib.glbl" -log "elaborate.log" 

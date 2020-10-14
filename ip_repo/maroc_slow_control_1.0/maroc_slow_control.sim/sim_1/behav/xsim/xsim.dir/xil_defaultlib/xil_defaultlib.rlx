@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/hdl/maroc_slow_control.v,1536004135,verilog,,C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/hdl/maroc_slow_control_v1_0.v,,maroc_slow_control,,,,,,,,
+C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/hdl/maroc_slow_control_v1_0.v,1534815306,verilog,,C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/hdl/maroc_slow_control_v1_0_S00_AXI.v,,maroc_slow_control_v1_0,,,,,,,,
+C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/hdl/maroc_slow_control_v1_0_S00_AXI.v,1534815308,verilog,,C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.srcs/sim_1/new/maroc_sc_t.v,,maroc_slow_control_v1_0_S00_AXI,,,,,,,,
+C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.srcs/sim_1/new/maroc_sc_t.v,1536005512,verilog,,,,maroc_sc_t,,,,,,,,
+C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/src/fifo_32by128/sim/fifo_32by128.v,1534896079,verilog,,C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/hdl/maroc_slow_control.v,,fifo_32by128,,,,,,,,

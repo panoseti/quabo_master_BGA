@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="3" DIGEST="">
+	<TOOL_VERSION Version="2018.3_AR71948"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="" PART="xc7k160tffg676-1" ARCH="kintex7" PACKAGE="ffg676" DEVICE="7k160t" SPEED="-1" LUT="101400" FF="202800" BRAM="325" DSP="600"/>
+	<HIERARCHY Name="base_mb_wrapper"/>
+	<File Type="HW_HANDOFF" Name="base_mb.hwh" DESIGN_HIERARCHY="base_mb_i" BD_TYPE="DEFAULT_BD"/>
+	<File Type="BD_TCL" Name="base_mb_bd.tcl"/>
+	<File Type="HW_HANDOFF" Name="base_mb_axi_ethernet_1_0.hwh" DESIGN_HIERARCHY="base_mb_i/axi_ethernet_1/inst" BD_TYPE="SCOPED_BD"/>
+	<File Type="BD_TCL" Name="base_mb_axi_ethernet_1_0_bd.tcl"/>
+	<File Type="HW_HANDOFF" Name="base_mb_axi_ethernet_0_0.hwh" DESIGN_HIERARCHY="base_mb_i/axi_ethernet_0/inst" BD_TYPE="SCOPED_BD"/>
+	<File Type="BD_TCL" Name="base_mb_axi_ethernet_0_0_bd.tcl"/>
+	<File Type="BIT" Name="base_mb_wrapper.bit"/>
+	<File Type="MMI" Name="base_mb_wrapper.mmi"/>
+	<DRIVERS>
+		<DRIVER IP_VLNV="xilinx.com:user:maroc_dc:1.0">
+			<File PATH="drivers/maroc_dc_v1_0/data/maroc_dc.mdd"/>
+			<File PATH="drivers/maroc_dc_v1_0/data/maroc_dc.tcl"/>
+			<File PATH="drivers/maroc_dc_v1_0/src/Makefile"/>
+			<File PATH="drivers/maroc_dc_v1_0/src/maroc_dc.h"/>
+			<File PATH="drivers/maroc_dc_v1_0/src/maroc_dc.c"/>
+			<File PATH="drivers/maroc_dc_v1_0/src/maroc_dc_selftest.c"/>
+		</DRIVER>
+		<DRIVER IP_VLNV="xilinx.com:user:maroc_slow_control:1.0">
+			<File PATH="drivers/maroc_slow_control_v1_0/data/maroc_slow_control.mdd"/>
+			<File PATH="drivers/maroc_slow_control_v1_0/data/maroc_slow_control.tcl"/>
+			<File PATH="drivers/maroc_slow_control_v1_0/src/Makefile"/>
+			<File PATH="drivers/maroc_slow_control_v1_0/src/maroc_slow_control.h"/>
+			<File PATH="drivers/maroc_slow_control_v1_0/src/maroc_slow_control.c"/>
+			<File PATH="drivers/maroc_slow_control_v1_0/src/maroc_slow_control_selftest.c"/>
+		</DRIVER>
+	</DRIVERS>
+	<USEDRESOURCES LUT="25831" FF="36927" BRAM="149" DSP="3"/>
+</Project>
+

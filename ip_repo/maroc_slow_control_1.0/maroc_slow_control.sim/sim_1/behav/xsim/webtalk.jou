@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Sep  3 11:55:29 2018
+# Process ID: 10364
+# Current directory: C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.sim/sim_1/behav/xsim/xsim.dir/maroc_sc_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.sim/sim_1/behav/xsim/xsim.dir/maroc_sc_t_behav/webtalk/xsim_webtalk.tcl -notrace

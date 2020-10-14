@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX1
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+Checksum           0x9DDB08D3
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                Checksum
+0x00000000    0x00661EDB    Apr  5 18:41:47 2020    base_mb_wrapper.bit    0x0593C5F7
+File Checksum Total                                                        0x0593C5F7

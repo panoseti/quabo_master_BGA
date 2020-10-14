@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Sep 19 17:00:33 2020
+# Process ID: 5020
+# Current directory: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0116/quabo_master/scripts
+# Command line: vivado -mode tcl
+# Log file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0116/quabo_master/scripts/vivado.log
+# Journal file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0116/quabo_master/scripts/vivado.jou
+#-----------------------------------------------------------
+source -notrace create_binfile.tcl 
+/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0116/build/quabo_V0116
+/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0116/build/quabo_V0116/quabo_V0116.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0116/quabo_master/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/wei/Software/Vivado/install/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1441.848 ; gain = 58.133 ; free physical = 6366 ; free virtual = 28949
+INFO: [Netlist 29-17] Analyzing 4223 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1_AR71948
+INFO: [Device 21-403] Loading part xc7k160tfbg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2590.613 ; gain = 66.961 ; free physical = 5293 ; free virtual = 27881
+Restored from archive | CPU: 2.710000 secs | Memory: 72.250877 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2590.613 ; gain = 66.961 ; free physical = 5293 ; free virtual = 27881
+Generating merged BMM file for the design top 'base_mb_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0116/quabo_master/SDK/quabo_service/Debug/quabo_service.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3350.984 ; gain = 0.000 ; free physical = 5297 ; free virtual = 27886
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 730 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 9 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 32 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 224 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 352 instances
+  SRLC16E => SRL16E: 1 instances
+  SRLC32E => SRL16E: 49 instances
+
+open_run: Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 3350.984 ; gain = 1909.137 ; free physical = 5297 ; free virtual = 27886
+epoch time 600560087 hex value 23CBD1D7
+Input a four-character version number
+Version is 0116
+INIT String is 64'h3031313623CBD1D7
+Running write_bitstream, will take a couple minutes
+Command: write_cfgmem -force -format bin -size 32 -interface SPIx1 -loadbit {up 0x00000000 "quabo_fwid.bit" } -file quabo_0116_23CBD1D7.bin
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile quabo_fwid.bit
+Writing file ./quabo_0116_23CBD1D7.bin
+Writing log file ./quabo_0116_23CBD1D7.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX1
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00661EDB    Sep 19 17:03:13 2020    quabo_fwid.bit
+14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully

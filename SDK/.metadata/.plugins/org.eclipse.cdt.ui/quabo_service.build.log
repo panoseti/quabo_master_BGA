@@ -1,0 +1,135 @@
+10:03:41 **** Build of configuration Debug for project quabo_service ****
+make all 
+Building file: ../src/casper_src/casper_tapcp.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/casper_src/casper_tapcp.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/casper_src/casper_tapcp.d" -MT"src/casper_src/casper_tapcp.o" -o "src/casper_src/casper_tapcp.o" "../src/casper_src/casper_tapcp.c"
+../src/casper_src/casper_tapcp.c:737:1: warning: 'u32_to_hex' defined but not used [-Wunused-function]
+ u32_to_hex(const uint32_t u32, uint8_t *p, uint8_t do_zeros)
+ ^~~~~~~~~~
+Finished building: ../src/casper_src/casper_tapcp.c
+ 
+Building file: ../src/casper_src/casper_tftp.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/casper_src/casper_tftp.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/casper_src/casper_tftp.d" -MT"src/casper_src/casper_tftp.o" -o "src/casper_src/casper_tftp.o" "../src/casper_src/casper_tftp.c"
+Finished building: ../src/casper_src/casper_tftp.c
+ 
+Building file: ../src/casper_src/flash.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/casper_src/flash.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/casper_src/flash.d" -MT"src/casper_src/flash.o" -o "src/casper_src/flash.o" "../src/casper_src/flash.c"
+Finished building: ../src/casper_src/flash.c
+ 
+Building file: ../src/casper_src/gpio_spi_sel.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/casper_src/gpio_spi_sel.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/casper_src/gpio_spi_sel.d" -MT"src/casper_src/gpio_spi_sel.o" -o "src/casper_src/gpio_spi_sel.o" "../src/casper_src/gpio_spi_sel.c"
+Finished building: ../src/casper_src/gpio_spi_sel.c
+ 
+Building file: ../src/casper_src/icap.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/casper_src/icap.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/casper_src/icap.d" -MT"src/casper_src/icap.o" -o "src/casper_src/icap.o" "../src/casper_src/icap.c"
+Finished building: ../src/casper_src/icap.c
+ 
+Building file: ../src/casper_src/spi.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/casper_src/spi.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/casper_src/spi.d" -MT"src/casper_src/spi.o" -o "src/casper_src/spi.o" "../src/casper_src/spi.c"
+Finished building: ../src/casper_src/spi.c
+ 
+Building file: ../src/casper_src/tftp_server.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/casper_src/tftp_server.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/casper_src/tftp_server.d" -MT"src/casper_src/tftp_server.o" -o "src/casper_src/tftp_server.o" "../src/casper_src/tftp_server.c"
+Finished building: ../src/casper_src/tftp_server.c
+ 
+Building file: ../src/casper_src/tmrctr.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/casper_src/tmrctr.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/casper_src/tmrctr.d" -MT"src/casper_src/tmrctr.o" -o "src/casper_src/tmrctr.o" "../src/casper_src/tmrctr.c"
+Finished building: ../src/casper_src/tmrctr.c
+ 
+Building file: ../src/EthCore_Configuration.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/EthCore_Configuration.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/EthCore_Configuration.d" -MT"src/EthCore_Configuration.o" -o "src/EthCore_Configuration.o" "../src/EthCore_Configuration.c"
+../src/EthCore_Configuration.c:27:0: warning: "XPAR_AXIETHERNET_1_MCAST_EXTEND" redefined
+ #define XPAR_AXIETHERNET_1_MCAST_EXTEND    1U    //WEI
+ 
+In file included from ../../standalone_bsp_0/microblaze_0/include/xil_printf.h:12:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xil_io.h:61,
+                 from ../../standalone_bsp_0/microblaze_0/include/sleep.h:52,
+                 from ../src/EthCore_Configuration.c:2:
+../../standalone_bsp_0/microblaze_0/include/xparameters.h:575:0: note: this is the location of the previous definition
+ #define XPAR_AXIETHERNET_1_MCAST_EXTEND 0U
+ 
+Finished building: ../src/EthCore_Configuration.c
+ 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/main.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:571:20: warning: passing argument 2 of 'udp_recv' from incompatible pointer type [-Wincompatible-pointer-types]
+  udp_recv(cmd_pcb, recv_callback, NULL);
+                    ^~~~~~~~~~~~~
+In file included from ../src/main.c:40:0:
+../../standalone_bsp_0/microblaze_0/include/lwip/udp.h:123:18: note: expected 'udp_recv_fn {aka void (*)(void *, struct udp_pcb *, struct pbuf *, const struct ip4_addr *, short unsigned int)}' but argument is of type 'void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip4_addr *, u16_t) {aka void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip4_addr *, short unsigned int)}'
+ void             udp_recv       (struct udp_pcb *pcb, udp_recv_fn recv,
+                  ^~~~~~~~
+../src/main.c: In function 'Set_MAROC_registers':
+../src/main.c:981:6: warning: variable 'val2write' set but not used [-Wunused-but-set-variable]
+  u32 val2write;
+      ^~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xspi.h:314:0,
+                 from ../src/main.c:43:
+../src/main.c: In function 'GetHouseKeeping':
+../../standalone_bsp_0/microblaze_0/include/xspi_l.h:98:12: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XSpi_In32((BaseAddress) + (RegOffset))
+            ^
+../src/main.c:1216:7: note: in expansion of macro 'XSpi_ReadReg'
+  if ((XSpi_ReadReg(&Spi, XSP_SR_OFFSET) & XSP_SR_TX_EMPTY_MASK) != 0) return -1;
+       ^~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xgpio_l.h:83:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xgpio.h:132,
+                 from ../src/main.c:31:
+../../standalone_bsp_0/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XSpi * {aka struct <anonymous> *}'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xspi.h:314:0,
+                 from ../src/main.c:43:
+../src/main.c: In function 'WR_int_callback':
+../../standalone_bsp_0/microblaze_0/include/xspi_l.h:98:12: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XSpi_In32((BaseAddress) + (RegOffset))
+            ^
+../src/main.c:1874:10: note: in expansion of macro 'XSpi_ReadReg'
+  while ((XSpi_ReadReg(&Spi, XSP_SR_OFFSET) & XSP_SR_TX_EMPTY_MASK) != 0);
+          ^~~~~~~~~~~~
+In file included from ../../standalone_bsp_0/microblaze_0/include/xgpio_l.h:83:0,
+                 from ../../standalone_bsp_0/microblaze_0/include/xgpio.h:132,
+                 from ../src/main.c:31:
+../../standalone_bsp_0/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'XSpi * {aka struct <anonymous> *}'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/platform.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+../src/platform.c: In function 'platform_setup_interrupts':
+../src/platform.c:118:2: warning: implicit declaration of function 'init_gpio_spi_sel' [-Wimplicit-function-declaration]
+  init_gpio_spi_sel();
+  ^~~~~~~~~~~~~~~~~
+Finished building: ../src/platform.c
+ 
+Building file: ../src/platform_mb.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/microblaze_0/include -c -fmessage-length=0 -MT"src/platform_mb.o" -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -mxl-frequency -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+Finished building: ../src/platform_mb.c
+ 
+Building target: quabo_service.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -L../../standalone_bsp_0/microblaze_0/lib -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "quabo_service.elf"  ./src/casper_src/casper_tapcp.o ./src/casper_src/casper_tftp.o ./src/casper_src/csl.o ./src/casper_src/flash.o ./src/casper_src/gpio_spi_sel.o ./src/casper_src/icap.o ./src/casper_src/spi.o ./src/casper_src/tftp_server.o ./src/casper_src/tmrctr.o  ./src/EthCore_Configuration.o ./src/main.o ./src/platform.o ./src/platform_mb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: quabo_service.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size quabo_service.elf  |tee "quabo_service.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 113050	   2144	 145646	 260840	  3fae8	quabo_service.elf
+Finished building: quabo_service.elf.size
+ 
+
+10:03:44 Build Finished (took 2s.466ms)
+

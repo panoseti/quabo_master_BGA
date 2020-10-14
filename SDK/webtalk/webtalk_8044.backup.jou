@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# 
+# Start of session at: Wed Jun 24 18:58:52 2020
+# Process ID: 8044
+# Current directory: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0112/quabo_master/SDK/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0112/quabo_master/SDK/webtalk/webtalk.log
+# Journal file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0112/quabo_master/SDK/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

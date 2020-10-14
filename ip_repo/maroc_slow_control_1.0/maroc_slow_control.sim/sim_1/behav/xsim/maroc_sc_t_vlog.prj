@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../src/fifo_32by128/sim/fifo_32by128.v" \
+"../../../../hdl/maroc_slow_control.v" \
+"../../../../hdl/maroc_slow_control_v1_0.v" \
+"../../../../hdl/maroc_slow_control_v1_0_S00_AXI.v" \
+"../../../../maroc_slow_control.srcs/sim_1/new/maroc_sc_t.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

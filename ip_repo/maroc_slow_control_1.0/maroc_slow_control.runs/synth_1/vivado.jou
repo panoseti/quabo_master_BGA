@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug 21 17:07:19 2018
+# Process ID: 10896
+# Current directory: C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.runs/synth_1
+# Command line: vivado.exe -log maroc_slow_control_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source maroc_slow_control_v1_0.tcl
+# Log file: C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.runs/synth_1/maroc_slow_control_v1_0.vds
+# Journal file: C:/XilinxProjects/PANOSETI/QuadrantBoard/ip_repo/maroc_slow_control_1.0/maroc_slow_control.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source maroc_slow_control_v1_0.tcl -notrace

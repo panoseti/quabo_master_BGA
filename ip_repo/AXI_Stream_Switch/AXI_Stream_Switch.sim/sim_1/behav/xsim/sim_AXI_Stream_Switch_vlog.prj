@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../AXI_Stream_Switch.ip_user_files/ipstatic/hdl" \
+"../../../../AXI_Stream_Switch.srcs/sources_1/ip/axis_switch_0/sim/axis_switch_0.v" \
+"../../../../AXI_Stream_Switch.srcs/sources_1/ip/FIFO_for_AXIS_0_5/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../AXI_Stream_Switch.srcs/sources_1/ip/FIFO_for_AXIS_0_5/new/FIFO_for_AXIS.v" \
+"../../../../AXI_Stream_Switch.srcs/sources_1/ip/FIFO_for_AXIS_0_5/sim/FIFO_for_AXIS_0.v" \
+"../../../../AXI_Stream_Switch.srcs/sources_1/new/AXI_Stream_Switch.v" \
+"../../../../AXI_Stream_Switch.srcs/sim_1/new/sim_AXI_Stream_Switch.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

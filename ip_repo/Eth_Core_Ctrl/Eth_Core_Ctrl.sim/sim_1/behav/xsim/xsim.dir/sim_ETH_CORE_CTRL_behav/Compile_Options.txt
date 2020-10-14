@@ -1,0 +1,1 @@
+-wto "d4d814642a5c467ba8d284aa222426d4" --incr --debug "typical" --relax --mt "8" -L "fifo_generator_v13_2_3" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "sim_ETH_CORE_CTRL_behav" "xil_defaultlib.sim_ETH_CORE_CTRL" "xil_defaultlib.glbl" -log "elaborate.log" 

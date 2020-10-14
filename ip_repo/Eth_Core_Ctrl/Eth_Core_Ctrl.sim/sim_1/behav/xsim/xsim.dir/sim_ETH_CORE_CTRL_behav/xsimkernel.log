@@ -1,0 +1,7 @@
+Running: xsim.dir/sim_ETH_CORE_CTRL_behav/xsimk -simmode gui -wdb sim_ETH_CORE_CTRL_behav.wdb -simrunnum 0 -socket 39861
+Design successfully loaded
+Design Loading Memory Usage: 44164 KB (Peak: 44172 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 130260 KB (Peak: 191436 KB)
+Simulation CPU Usage: 40 ms

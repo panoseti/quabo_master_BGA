@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="maroc_sc_t_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="maroc_sc_t" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2183300000000fs"></ZoomStartTime>
+      <ZoomEndTime time="2199740000001fs"></ZoomEndTime>
+      <Cursor1Time time="2200000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="142"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/maroc_sc_t/SC_RSTb" type="array">
+      <obj_property name="ElementShortName">SC_RSTb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SC_RSTb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/SC_DOUT" type="array">
+      <obj_property name="ElementShortName">SC_DOUT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SC_DOUT[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/SC_CLK" type="array">
+      <obj_property name="ElementShortName">SC_CLK[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SC_CLK[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/SC_DIN" type="array">
+      <obj_property name="ElementShortName">SC_DIN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SC_DIN[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/axi_reset" type="logic">
+      <obj_property name="ElementShortName">axi_reset</obj_property>
+      <obj_property name="ObjectShortName">axi_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/go" type="logic">
+      <obj_property name="ElementShortName">go</obj_property>
+      <obj_property name="ObjectShortName">go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/SC_go" type="logic">
+      <obj_property name="ElementShortName">SC_go</obj_property>
+      <obj_property name="ObjectShortName">SC_go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/state" type="array">
+      <obj_property name="ElementShortName">state[7:0]</obj_property>
+      <obj_property name="ObjectShortName">state[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_OUT_FIFO/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/tick_counter" type="array">
+      <obj_property name="ElementShortName">tick_counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tick_counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/bit_counter" type="array">
+      <obj_property name="ElementShortName">bit_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_counter[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/word_counter" type="array">
+      <obj_property name="ElementShortName">word_counter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">word_counter[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/out_fifo_ren" type="logic">
+      <obj_property name="ElementShortName">out_fifo_ren</obj_property>
+      <obj_property name="ObjectShortName">out_fifo_ren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/load_out_SR" type="array">
+      <obj_property name="ElementShortName">load_out_SR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">load_out_SR[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/par_data_out" type="array">
+      <obj_property name="ElementShortName">par_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">par_data_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_IN_FIFO/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_IN_FIFO/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/inmux_sel" type="array">
+      <obj_property name="ElementShortName">inmux_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">inmux_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/shift_in_SR" type="logic">
+      <obj_property name="ElementShortName">shift_in_SR</obj_property>
+      <obj_property name="ObjectShortName">shift_in_SR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/inmux" type="array">
+      <obj_property name="ElementShortName">inmux[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inmux[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/in_shift_reg" type="array">
+      <obj_property name="ElementShortName">in_shift_reg[3:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_shift_reg[3:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/SC_DIN" type="array">
+      <obj_property name="ElementShortName">SC_DIN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SC_DIN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/par_data_out" type="array">
+      <obj_property name="ElementShortName">par_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">par_data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/rd_par_data" type="logic">
+      <obj_property name="ElementShortName">rd_par_data</obj_property>
+      <obj_property name="ObjectShortName">rd_par_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/out_fifo_out" type="array">
+      <obj_property name="ElementShortName">out_fifo_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_fifo_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/out_fifo_wen" type="logic">
+      <obj_property name="ElementShortName">out_fifo_wen</obj_property>
+      <obj_property name="ObjectShortName">out_fifo_wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/USR_LOGIC/par_data_in" type="array">
+      <obj_property name="ElementShortName">par_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">par_data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/sample_val" type="array">
+      <obj_property name="ElementShortName">sample_val[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_val[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/UUT/maroc_slow_control_v1_0_S00_AXI_inst/slv_reg0" type="array">
+      <obj_property name="ElementShortName">slv_reg0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maroc_sc_t/maroc_shift_reg0" type="array">
+      <obj_property name="ElementShortName">maroc_shift_reg0[828:0]</obj_property>
+      <obj_property name="ObjectShortName">maroc_shift_reg0[828:0]</obj_property>
+   </wvobject>
+</wave_config>

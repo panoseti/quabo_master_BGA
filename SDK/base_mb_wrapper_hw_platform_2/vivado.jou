@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1_AR71948 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:18:30 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Tue Apr  7 12:40:37 2020
+# Process ID: 4459
+# Current directory: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105/quabo_master/SDK/base_mb_wrapper_hw_platform_2
+# Command line: vivado -mode tcl
+# Log file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105/quabo_master/SDK/base_mb_wrapper_hw_platform_2/vivado.log
+# Journal file: /media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105/quabo_master/SDK/base_mb_wrapper_hw_platform_2/vivado.jou
+#-----------------------------------------------------------
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "download.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X_3.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X_3.bin" -force
+write_cfgmem -format bin -size 32 -interface SPIx1 -loadbit "up 0x0 base_mb_wrapper.bit" -checksum -file "quabo_010X_3.bin" -force

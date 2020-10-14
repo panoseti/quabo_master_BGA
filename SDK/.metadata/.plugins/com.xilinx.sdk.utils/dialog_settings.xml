@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0093/V0090/quabo_master_V0090/quabo_master/SDK/quabo_service/Debug" key="tcf_debug_app_selection"/>
+	<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/SDK/quabo_service/Debug" key="fpga_elf_mem_selection"/>
+	<item value="/media/wei/DATA/LW/Project/panoseti/tftp/tftp_data/panoseti_tftp/v0091" key="program_fpga_view_bit_bmm_browse_key"/>
+	<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/SDK/quabo_service/Debug" key="last_stored_selection"/>
+</section>

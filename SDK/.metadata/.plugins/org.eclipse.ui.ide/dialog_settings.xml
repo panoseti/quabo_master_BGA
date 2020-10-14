@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0115/quabo_master/SDK"/>
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0113/quabo_master/SDK"/>
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0112/quabo_master/SDK"/>
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0111/quabo_master/SDK"/>
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105_NEW/quabo_master/SDK"/>
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0105/quabo_master/SDK"/>
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0104/quabo_master/SDK"/>
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/SDK"/>
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0093/V0090/quabo_master_V0090/quabo_master/SDK/base_mb_wrapper_hw_platform_2"/>
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0093/V0090/quabo_master_V0090/quabo_master/SDK"/>
+		<item value="/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0091/V0090/quabo_master_V0090/quabo_master/SDK"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="563" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="387" key="DIALOG_HEIGHT"/>
+		<item value="1357" key="DIALOG_X_ORIGIN"/>
+		<item value="478" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\XilinxProjects\PANOSETI\QuadrantBoard\quabo_master\SDK"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

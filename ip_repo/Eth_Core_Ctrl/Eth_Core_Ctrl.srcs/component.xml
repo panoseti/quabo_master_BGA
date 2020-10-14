@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>user.org</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>ETH_CORE_CTRL</spirit:name>
+  <spirit:version>2.1</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>m_axis_txc</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_txc_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TKEEP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_txc_tkeep</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_txc_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_txc_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_txc_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>m_axis_txd</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_txd_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TKEEP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_txd_tkeep</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_txd_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_txd_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m_axis_txd_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>s_axis_txd</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_txd_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TKEEP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_txd_tkeep</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_txd_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_txd_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axis_txd_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>rst</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>rst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">m_axis_txc:m_axis_txd:s_axis_txd</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">rst</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>ETH_CORE_CTRL</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>c1920ff9</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>Verilog</spirit:language>
+        <spirit:modelName>ETH_CORE_CTRL</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>c1920ff9</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:modelName>sim_ETH_CORE_CTRL</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>5ccc88f7</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f92e9879</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>rst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_txd_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_txd_tkeep</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_txd_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_txd_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axis_txd_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_txd_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_txd_tkeep</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_txd_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_txd_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_txd_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_txc_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">1</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_txc_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_txc_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_txc_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m_axis_txc_tkeep</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/fifo_generator_0/fifo_generator_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/new/ETH_CORE_CTRL.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_15082358</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.2">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/fifo_generator_0/fifo_generator_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/new/ETH_CORE_CTRL.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.2">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim_1/new/sim_ETH_CORE_CTRL.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/ETH_CORE_CTRL_v2_1.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f92e9879</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>ETH_CORE_CTRL_v2_1</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">ETH_CORE_CTRL_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>ETH_CORE_CTRL_v2_1</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>user.org:user:ETH_CORE_CTRL:2.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2020-03-03T21:23:49Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3395e008_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a160d46_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f46f23_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3759c485_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7068d9be_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a889e9c_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7074af6d_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a88c759_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12d135bb_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d2f027e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7160cd16_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77d897aa_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@310b00f2_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7403a15b_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cbaabbd_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c4ea14d_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b8cf437_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38fad92e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c47534_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f6f23e8_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b9921d1_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@358ed5fb_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62811492_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49ac57b5_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49bdd1af_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13c627a4_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6958e116_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5041c619_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b329afa_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44f5e388_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@343768c1_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@160b0ce1_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d95403e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28ad4b9f_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e9fbe3d_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a70be06_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35475ec5_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fba7c00_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45f1fd9_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35d0e6cf_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1eb79568_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e37c069_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c4f4a9e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f48f6e8_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c4c2a02_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23f3b585_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@86f0ea4_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fcd11fd_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42fb39ef_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ab0657_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46be16a4_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@580ad81_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33145408_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5636a1dc_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@160f88e4_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5673043_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d8de60c_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@413ddaaf_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d506d23_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2727458a_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@196529f2_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a1942fe_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69b34cd0_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@98f34c7_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41b827ea_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@737f02e9_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29af6ffd_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a74ea50_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e451e5a_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a8288e0_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25a6862f_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bc5908e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c25de28_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@446b2954_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d43b1f2_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57af662b_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4489a14b_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fdb223f_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f688d91_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d8031f5_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45dab605_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d13f6da_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5483c607_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@521c156e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62f65d8b_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59eee87_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4affff3e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b612998_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d60fe59_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19461828_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4794e6ab_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66700546_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72710007_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f676006_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ad82d08_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12591871_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@519035ba_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50afc1d5_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e1c59f8_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@589111ff_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@257fe73a_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26ba662b_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65b5a63e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25f029b7_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6aad6c37_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@223bd4d8_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42050f4d_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@312d5ad4_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52b742df_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57564cd0_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3980feb3_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45ece76b_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59bf619f_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@432b8a92_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27ef6375_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@705ec0cf_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10d41fb2_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@124f304b_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fce43e5_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23e6f81d_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1249e1bb_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dd08da0_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27f6019d_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43b524df_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66c8791c_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a04969a_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e449bd0_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@170fe9f8_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7808174f_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2869e52a_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ebb0028_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cb10f12_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ba2f52b_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e4b8e1b_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5883480e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57a22ca8_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@777d251e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@279ff263_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7049fac5_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e23f85_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dea4fee_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1174bcee_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@588deab3_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1297d7dd_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61f42a0e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e39e94f_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@521f8697_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@667d8d26_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55f7966e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60dee65b_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11ca823_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11775853_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b34c50_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46730fc_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@595e3d5e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1683ae9_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bbe2aef_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@781c6fc_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6adf969a_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1072fab1_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e3b3285_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c5aeee3_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28f127cb_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1699eaef_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bc2786e_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2af301d2_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52856621_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@277fa60c_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64f17149_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f621c02_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7066e8cd_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b6b2bb7_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@552ecffa_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dc70473_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@170ccbff_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75491332_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69f22b2c_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27740927_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@148d8650_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74584a80_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee52102_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@530619aa_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@363ec365_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71492ea_ARCHIVE_LOCATION">/media/wei/DATA/LW/Project/Vivado_Project/Panoseti/V0103/quabo_master/ip_repo/Eth_Core_Ctrl/Eth_Core_Ctrl.srcs</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3.1_AR71948</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="bb07ffe7"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1cad0f93"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="6fb72fcc"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="113b3231"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
